@@ -14,7 +14,7 @@
 .ArtistMarqueeText1 {
   overflow: hidden;
   white-space: nowrap;
-  animation-name: Marquee1;
+  animation-name: Marquee;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -26,7 +26,7 @@
 .ArtistMarqueeText2 {
   overflow: hidden;
   white-space: nowrap;
-  animation-name: Marquee2;
+  animation-name: Marquee;
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -34,17 +34,7 @@
   background-color: black;
 }
 
-@keyframes Marquee1 {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%)
-  }
-}
-
-@keyframes Marquee2 {
+@keyframes Marquee {
   0% {
     transform: translateX(-100%);
   }
