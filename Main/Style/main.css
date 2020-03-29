@@ -1,16 +1,15 @@
 /* Global */
-
 img {
- max-width: 100%;
- max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Social Media Sidebar */
 .SocialMediaSidebar {
   position: fixed;
   top: 30%;
-  left:10px;
-  z-index: 2;
+  left: 10px;
+  z-index: 1;
 }
 
 .SMSBox {
@@ -29,18 +28,16 @@ img {
 }
 
 /* Scroll Arrow */
-
 .ScrollArrow {
   position: fixed;
   bottom: 10px;
   left: 46.5%;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* Artist Marquee Scroller */
-
 .ArtistMarqueeWrapper {
-  z-index: 1;
+  z-index: 2;
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -51,7 +48,6 @@ img {
   line-height: 50px;
   position: relative;
   width: 100%;
-
 }
 
 .ArtistMarqueeText1 {
@@ -65,7 +61,7 @@ img {
   animation-delay: -10s;
   z-index: 2;
   background-color: black;
-  width:100%;
+  width: 100%;
 }
 
 .ArtistMarqueeText2 {
@@ -78,7 +74,7 @@ img {
   position: absolute;
   z-index: 2;
   background-color: black;
-  width:100%;
+  width: 100%;
 }
 
 @keyframes Marquee {
@@ -121,8 +117,7 @@ img {
   font-style: normal;
   font-weight: 900;
   font-size: 25px;
-  padding-left: 50px
-  vertical-align: middle;
+  padding-left: 50px vertical-align: middle;
   line-height: 50px;
 }
 
@@ -137,13 +132,11 @@ img {
 }
 
 /* Landing Page */
-
-.LandingPage{
+.LandingPage {
   background-color: #FF0078;
   height: 1000px;
   position: relative;
 }
-
 
 .HeroImage {
   width: 50%;
@@ -153,18 +146,15 @@ img {
   transform: translate(-50%, -50%);
 }
 
-
 /* Lineup screen */
-
-.Lineup{
+.Lineup {
   background-color: #2400FF;
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 900;
   font-style: normal;
   color: white;
-
   position: relative;
-  height:1000px;
+  height: 1000px;
 }
 
 .LineupContainer {
@@ -173,7 +163,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .LineupRow {
@@ -183,13 +172,11 @@ img {
 
 .HeadLine {
   font-size: 65px;
-
 }
 
-.MajorAct{
+.MajorAct {
   font-size: 43px;
   margin-bottom: 10px;
-
 }
 
 .SupportAct {
@@ -225,7 +212,6 @@ img {
 #PEKING {
   flex: 1;
   text-align: left;
-
 }
 
 #RUFUS {
@@ -279,12 +265,43 @@ img {
 }
 
 /* Tickets Screen */
-
 .Tickets {
-    background-color: #FF0078;
+  background-color: #FF0078;
+  height: 1000px;
+  position: relative;
 }
-/* Footer */
 
+.TicketContainer {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-75%, -50%);
+  display: flex;
+}
+
+.Button {
+  flex: 1;
+  background-color: black;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding: 5%;
+  margin: 5%;
+}
+
+/* Footer */
 .Footer {
   background-color: Black;
+  color: white;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 50px;
+  text-align: right;
 }
