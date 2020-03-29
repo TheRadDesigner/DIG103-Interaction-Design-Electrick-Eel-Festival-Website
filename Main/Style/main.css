@@ -1,109 +1,9 @@
-body {
-  background-color: #FF0078;
-}
-
 /* Social Media Sidebar */
-
-.SocialMediaSidebar{
+.SocialMediaSidebar {
   position: fixed;
-  top: 30%
+  top: 30%;
+  left:10px;
 }
-
-
-/* Artist Marquee Scroller */
-.ArtistMarqueeWrapper {
-  font-family: nimbus-sans-extended, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  color: white;
-  font-size: 25px;
-  height: 50px;
-  background-color: black;
-  vertical-align: middle;
-  line-height: 50px;
-}
-
-.ArtistMarqueeText1 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation-name: Marquee;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  position: absolute;
-  animation-delay: -10s;
-}
-
-.ArtistMarqueeText2 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation-name: Marquee;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  position: absolute;
-}
-
-@keyframes Marquee {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%)
-  }
-}
-
-/* Navigation Menu */
-.nav {
-  display: flex;
-  background-color: black;
-  font-family: nimbus-sans-extended, sans-serif;
-  height: 50px;
-  width: 100%
-  display: flex;
-  vertical-align: middle;
-  line-height: 50px;
-  position: fixed;
-  top: 0px;
-}
-
-.nav a {
-  color: white;
-  font-family: nimbus-sans-extended, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  text-decoration: none;
-  text-align: center;
-}
-
-.navLogo {
-  color: white;
-  flex-grow: 6;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 25px;
-  padding-left: 10px
-}
-
-.navItem {
-  flex-grow: 1
-}
-
-.navItem a:hover {
-  font-size: 22px;
-  transition: .25s;
-  transition-timing-function: linear;
-}
-
-/* Social Media Sidebar */
-.HeroImage {
-  width: 100%
-}
-
-/* Social Media Sidebar */
-.SocialMediaSidebar {}
 
 .SMSBox {
   background-color: black;
@@ -118,4 +18,146 @@ body {
 
 .SMSBox a {
   color: white;
+}
+
+/* Scroll Arrow */
+
+.ScrollArrow {
+  position: fixed;
+  bottom: 10px;
+  left: 46.5%
+}
+
+/* Artist Marquee Scroller */
+
+.ArtistMarqueeWrapper {
+  z-index: 1;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  font-size: 25px;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+  position: relative;
+  width: 100%;
+
+}
+
+.ArtistMarqueeText1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: Marquee;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  animation-delay: -10s;
+  z-index: 1;
+  background-color: black;
+  width:100%;
+}
+
+.ArtistMarqueeText2 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: Marquee;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  z-index: 1;
+  background-color: black;
+  width:100%;
+}
+
+@keyframes Marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%)
+  }
+}
+
+/* Navigation Menu */
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: black;
+  font-family: nimbus-sans-extended, sans-serif;
+  height: 50px;
+  width: 100%
+}
+
+.nav a {
+  color: white;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.navLogo {
+  color: white;
+  flex-grow: 6;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  padding-left: 10px
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.navItem {
+  flex-grow: 1;
+}
+
+.navItem a:hover {
+  font-size: 22px;
+  transition: .25s;
+  transition-timing-function: linear;
+}
+
+/* Landing Page */
+
+.LandingPage{
+  background-color: #FF0078;
+  height: 500px;
+}
+
+.LandingPage img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.HeroImage {
+  height :60%;
+  width: 50%;
+  background-color: #2400FF;
+}
+
+/* Lineup screen */
+
+.Lineup{
+  background-color: #2400FF;
+}
+
+/* Tickets Screen */
+
+.Tickets {
+    background-color: #FF0078;
+}
+/* Footer */
+
+.Footer {
+  background-color: Black;
 }
