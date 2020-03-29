@@ -1,8 +1,16 @@
+/* Global */
+
+img {
+ max-width: 100%;
+ max-height: 100%;
+}
+
 /* Social Media Sidebar */
 .SocialMediaSidebar {
   position: fixed;
   top: 30%;
   left:10px;
+  z-index: 2;
 }
 
 .SMSBox {
@@ -25,7 +33,8 @@
 .ScrollArrow {
   position: fixed;
   bottom: 10px;
-  left: 46.5%
+  left: 46.5%;
+  z-index: 2;
 }
 
 /* Artist Marquee Scroller */
@@ -54,7 +63,7 @@
   animation-timing-function: linear;
   position: absolute;
   animation-delay: -10s;
-  z-index: 1;
+  z-index: 2;
   background-color: black;
   width:100%;
 }
@@ -67,7 +76,7 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   background-color: black;
   width:100%;
 }
@@ -90,7 +99,8 @@
   background-color: black;
   font-family: nimbus-sans-extended, sans-serif;
   height: 50px;
-  width: 100%
+  width: 100%;
+  z-index: 1;
 }
 
 .nav a {
@@ -111,8 +121,7 @@
   font-style: normal;
   font-weight: 900;
   font-size: 25px;
-  padding-left: 10px
-  text-align: center;
+  padding-left: 50px
   vertical-align: middle;
   line-height: 50px;
 }
@@ -131,24 +140,142 @@
 
 .LandingPage{
   background-color: #FF0078;
-  height: 500px;
+  height: 1000px;
+  position: relative;
 }
 
-.LandingPage img {
-  max-width: 100%;
-  max-height: 100%;
-}
 
 .HeroImage {
-  height :60%;
   width: 50%;
-  background-color: #2400FF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 
 /* Lineup screen */
 
 .Lineup{
   background-color: #2400FF;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+
+  position: relative;
+  height:1000px;
+}
+
+.LineupContainer {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.LineupRow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.HeadLine {
+  font-size: 65px;
+
+}
+
+.MajorAct{
+  font-size: 43px;
+  margin-bottom: 10px;
+
+}
+
+.SupportAct {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+#FLUME {
+  flex: 1;
+  text-align: left;
+}
+
+#HALSEY {
+  flex: 1;
+  text-align: right;
+}
+
+#PNAU {
+  flex: 1;
+  text-align: left;
+}
+
+#MARLO {
+  flex: 1;
+  text-align: center;
+}
+
+#SAFIA {
+  flex: 1;
+  text-align: right;
+}
+
+#PEKING {
+  flex: 1;
+  text-align: left;
+
+}
+
+#RUFUS {
+  flex: 1;
+  text-align: right;
+}
+
+#ALLISON {
+  flex: 2;
+  text-align: left;
+}
+
+#ALEX {
+  flex: 1;
+  text-align: center;
+}
+
+#RUBY {
+  flex: 1;
+  text-align: right;
+}
+
+#JOEL {
+  flex: 2.5;
+  text-align: left;
+}
+
+#SCNDL {
+  flex: 1;
+  text-align: center;
+}
+
+#LIGHT {
+  flex: 2;
+  text-align: center;
+}
+
+#KOMES {
+  flex: 1;
+  text-align: right;
+}
+
+#PSYCHEDELIC {
+  flex: 2.5;
+  text-align: left;
+}
+
+#TIGERLILLY {
+  flex: 1;
+  text-align: right;
 }
 
 /* Tickets Screen */
