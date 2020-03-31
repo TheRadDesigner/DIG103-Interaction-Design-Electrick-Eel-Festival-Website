@@ -157,16 +157,27 @@ body {
   font-weight: 900;
   font-style: normal;
   color: white;
-  position: relative;
   height: 100vh;  /* wont work in IE*/
+}
+
+.LineupHeightDivider{
+  height: 30%;
+  background-color: green
+}
+
+
+
+.LineupContainerRow {
+  display: flex;
+}
+
+.LineupSideDivider {
+  width: 25%;
+  background-color: red;
 }
 
 .LineupContainer {
   width: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .LineupRow {
@@ -175,16 +186,16 @@ body {
 }
 
 .HeadLine {
-  font-size: 65px;
+  font-size: 400%;
 }
 
 .MajorAct {
-  font-size: 43px;
+  font-size: 272%;
   margin-bottom: 10px;
 }
 
 .SupportAct {
-  font-size: 22px;
+  font-size: 140%;
   margin-bottom: 10px;
 }
 
