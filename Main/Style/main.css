@@ -1,11 +1,14 @@
 /* Global */
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
+'main.css'
+
 
 body {
-  margin:0;
+  margin: 0;
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
 }
 
 /* Social Media Sidebar */
@@ -39,58 +42,6 @@ body {
   z-index: 1;
 }
 
-/* Artist Marquee Scroller */
-.ArtistMarqueeWrapper {
-  z-index: 2;
-  font-family: nimbus-sans-extended, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  color: white;
-  font-size: 25px;
-  height: 50px;
-  vertical-align: middle;
-  line-height: 50px;
-  position: relative;
-  width: 100%;
-}
-
-.ArtistMarqueeText1 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation-name: Marquee;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  position: absolute;
-  animation-delay: -10s;
-  z-index: 2;
-  background-color: black;
-
-}
-
-.ArtistMarqueeText2 {
-  overflow: hidden;
-  white-space: nowrap;
-  animation-name: Marquee;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  position: absolute;
-  z-index: 2;
-  background-color: black;
-
-}
-
-@keyframes Marquee {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  100% {
-    transform: translateX(100%)
-  }
-}
-
 /* Navigation Menu */
 .nav {
   position: fixed;
@@ -99,8 +50,9 @@ body {
   background-color: black;
   font-family: nimbus-sans-extended, sans-serif;
   height: 50px;
-  width: 100%;
+  width: 1280px;
   z-index: 1;
+
 }
 
 .nav a {
@@ -138,8 +90,11 @@ body {
 /* Landing Page */
 .LandingPage {
   background-color: #FF0078;
-  height: 100vh;  /* wont work in IE*/
+  width: 1280px;
+  height: 100vh;
+  /* wont work in IE*/
   position: relative;
+  margin: 0;
 }
 
 .HeroImage {
@@ -157,27 +112,28 @@ body {
   font-weight: 900;
   font-style: normal;
   color: white;
-  height: 100vh;  /* wont work in IE*/
+  width: 1280px;
+  height: 100vh;
+  /* wont work in IE*/
+
 }
 
-.LineupHeightDivider{
-  height: 30%;
+.LineupHeightDivider {
+  height: 20%;
   background-color: green
 }
-
-
 
 .LineupContainerRow {
   display: flex;
 }
 
 .LineupSideDivider {
-  width: 25%;
+  width: 20%;
   background-color: red;
 }
 
 .LineupContainer {
-  width: 50%;
+  width: 60%;
 }
 
 .LineupRow {
@@ -186,16 +142,16 @@ body {
 }
 
 .HeadLine {
-  font-size: 400%;
+  font-size: 70px;
 }
 
 .MajorAct {
-  font-size: 272%;
+  font-size: 50px;
   margin-bottom: 10px;
 }
 
 .SupportAct {
-  font-size: 140%;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -282,7 +238,9 @@ body {
 /* Tickets Screen */
 .Tickets {
   background-color: #FF0078;
-  height: 100vh;  /* wont work in IE*/
+  width: 1280px;
+  height: 100vh;
+  /* wont work in IE*/
   position: relative;
 }
 
@@ -293,6 +251,7 @@ body {
   left: 50%;
   transform: translate(-65%, -50%);
   display: flex;
+  background-color: blue;
 }
 
 .Button {
@@ -311,6 +270,7 @@ body {
 /* Footer */
 .Footer {
   background-color: Black;
+  width: 1280px;
   color: white;
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 400;
