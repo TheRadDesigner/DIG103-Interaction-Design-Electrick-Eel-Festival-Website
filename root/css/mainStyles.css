@@ -1,0 +1,236 @@
+/* Global */
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Social Media Sidebar */
+.SocialMediaSidebar {
+  position: fixed;
+  top: 30%;
+  left: 10px;
+  z-index: 1;
+}
+
+.SMSBox {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.SMSBox a {
+  color: white;
+}
+
+/* Navigation Menu */
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: black;
+  font-family: nimbus-sans-extended, sans-serif;
+  height: 50px;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav a {
+  color: white;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.navLogo {
+  color: white;
+  flex-grow: 6;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+.navItem {
+  flex-grow: 1;
+}
+
+.navItem a:hover {
+  font-size: 22px;
+  transition: .25s;
+  transition-timing-function: linear;
+}
+
+/* Landing Page */
+.LandingPage {
+  background-color: #FF0078;
+  position: relative;
+}
+
+.HeroImage {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Lineup screen */
+.Lineup {
+  background-color: #2400FF;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  position: relative;
+}
+
+.LineupContainer {
+  width: 700px;
+  height: 395px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.LineupRow {
+  display: flex;
+}
+
+.HeadLine {
+  font-size: 65px;
+  line-height: 100px;
+}
+
+.MajorAct {
+  font-size: 54px;
+  line-height: 75px;
+}
+
+.SupportAct {
+  font-size: 23px;
+  line-height: 50px;
+}
+
+#FLUME {
+  width: 350px
+}
+
+#HALSEY {
+  width: 350px
+}
+
+#PNAU {
+  width: 224px;
+}
+
+#MARLO {
+  width: 281px;
+}
+
+#SAFIA {
+  width: 195px;
+}
+
+#PEKING {
+  width: 473px;
+}
+
+#RUFUS {
+  width: 227px;
+}
+
+#ALLISON {
+  width: 388px;
+}
+
+#ALEX {
+  width: 136px;
+}
+
+#RUBY {
+  width: 176px;
+}
+
+#JOEL {
+  width: 267px;
+}
+
+#SCNDL {
+  width: 124px;
+}
+
+#LIGHT {
+  width: 196px;
+}
+
+#KOMES {
+  width: 113px;
+}
+
+#PSYCHEDELIC {
+  width: 526px;
+}
+
+#TIGERLILLY {
+  width: 174px;
+}
+
+/* Tickets Screen */
+.Tickets {
+  background-color: #FF0078;
+  position: relative;
+}
+
+.TicketRow {
+  display: flex;
+  width: 1180px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Button {
+  background-color: black;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  width: 440px;
+  padding: 25px;
+  margin: 50px;
+
+}
+
+.Footer {
+  background-color: Black;
+  width: 100%;
+  color: white;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+}
