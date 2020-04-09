@@ -12,21 +12,28 @@
 
 <body>
 
+  <!-- Background Video -->
+
+  <div class="BackgroundContainer">
+    <video loop muted autoplay class="BackgroundVideo">
+      <source src="img/Video/Background.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <!-- Social Media Sidebar -->
 
   <div class="SocialMediaSidebar">
     <div class="SMSBox">
-      <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      <i class="fab fa-instagram"></i>
     </div>
     <div class="SMSBox">
-      <a href="https://www.soundcloud.com/"><i class="fab fa-soundcloud"></i></a>
+      <i class="fab fa-soundcloud"></i>
     </div>
     <div class="SMSBox">
-      <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+      <i class="fab fa-twitter"></i>
     </div>
     <div class="SMSBox">
-      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+      <i class="fab fa-facebook-f"></i>
     </div>
   </div>
 
@@ -58,9 +65,26 @@
 
     <div class="LandingPage section">
       <div class="HeroImage">
-        <img src="img/Index/Hero.svg" alt="">
+        <span>ELETRIK</span>
+        <svg viewBox='0 0 100 4'>
+          <path fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5
+              c 5,0,5,-3,10,-3
+              s 5,3,10,3
+              c 5,0,5,-3,10,-3
+              s 5,3,10,3
+              c 5,0,5,-3,10,-3
+              s 5,3,10,3
+              c 5,0,5,-3,10,-3
+              s 5,3,10,3
+              c 5,0,5,-3,10,-3
+              s 5,3,10,3
+              c 5,0,5,-3,10,-3
+              s 5,3,10,3' />
+          <span>EEL</span>
       </div>
     </div>
+
+
 
     <!-- Lineup screen -->
 
@@ -140,7 +164,6 @@
       </div>
     </div>
 
-
     <!-- Tickets Screen -->
 
     <div class="Tickets section">
@@ -149,10 +172,10 @@
       <div class="TicketRow">
         <div class="TicketSideDivider">
         </div>
-        <div class="Button">
+        <div class="Button Normie">
           GENERAL<br> ADMISSION
         </div>
-        <div class="Button">
+        <div class="Button VIP">
           VIP<br> EXPERIENCE
         </div>
         <div class="TicketSideDivider">
@@ -170,15 +193,12 @@
   </div>
 
   <script type="text/javascript">
-
-      new fullpage('#fullpage', {
-          anchors: ['page1', 'page2', 'page3', 'page4'],
-          css3: true,
-          scrollingSpeed: 1000,
-          navigation: true,
-          responsiveHeight: 330,
-      });
-
+    new fullpage('#fullpage', {
+      anchors: ['Home', 'Lineup', 'Tickets'],
+      css3: true,
+      scrollingSpeed: 1000,
+      responsiveHeight: 330,
+    });
   </script>
 
 
