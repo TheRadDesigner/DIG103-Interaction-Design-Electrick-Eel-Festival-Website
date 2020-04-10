@@ -151,8 +151,7 @@ body {
 }
 
 .LineupContainer {
-  width: 700px;
-  height: 395px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -167,10 +166,11 @@ body {
 .HeadLine {
   font-size: 65px;
   line-height: 100px;
+  margin-right: 30px;
 }
 
 .HeadLine:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .8s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .5s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 20px;
   background-repeat: repeat-x;
@@ -178,8 +178,9 @@ body {
 }
 
 .MajorAct {
-  font-size: 54px;
+  font-size: 50px;
   line-height: 75px;
+  margin-right: 30px;
 }
 
 .MajorAct:hover {
@@ -193,78 +194,15 @@ body {
 .SupportAct {
   font-size: 23px;
   line-height: 50px;
+  margin-right: 10px;
 }
 
 .SupportAct:hover {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .4s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: 0 100%;
   background-size: auto 8px;
   background-repeat: repeat-x;
   text-decoration: none;
-}
-
-#FLUME {
-  width: 350px
-}
-
-#HALSEY {
-  width: 350px
-}
-
-#PNAU {
-  width: 224px;
-}
-
-#MARLO {
-  width: 281px;
-}
-
-#SAFIA {
-  width: 195px;
-}
-
-#PEKING {
-  width: 473px;
-}
-
-#RUFUS {
-  width: 227px;
-}
-
-#ALLISON {
-  width: 388px;
-}
-
-#ALEX {
-  width: 136px;
-}
-
-#RUBY {
-  width: 176px;
-}
-
-#JOEL {
-  width: 267px;
-}
-
-#SCNDL {
-  width: 124px;
-}
-
-#LIGHT {
-  width: 196px;
-}
-
-#KOMES {
-  width: 113px;
-}
-
-#PSYCHEDELIC {
-  width: 526px;
-}
-
-#TIGERLILLY {
-  width: 174px;
 }
 
 /* Tickets Screen */
@@ -280,6 +218,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.TicketCol{
+  width: 440px;
+  padding: 25px;
+  margin: 50px;
+}
+
+.TicketCol img{
+
+}
 
 .Button {
   background-color: black;
@@ -289,7 +236,6 @@ body {
   font-size: 35px;
   color: white;
   text-align: center;
-  width: 440px;
   padding: 25px;
   margin: 50px;
 }
