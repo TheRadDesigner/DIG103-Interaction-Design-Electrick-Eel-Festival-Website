@@ -34,7 +34,7 @@ body {
   background-color: black;
   height: 50px;
   width: 50px;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 10px;
   text-align: center;
   vertical-align: middle;
@@ -77,11 +77,34 @@ body {
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 1em;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
   line-height: 50px;
+}
+.HamburgerIcon{
+  color: white;
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  padding: 0px 20px
+}
+.navMobSocial {
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  flex-grow: 1;
 }
 
 .navLogo {
@@ -89,7 +112,7 @@ body {
   flex-grow: 6;
   font-style: normal;
   font-weight: 900;
-  font-size: 25px;
+  font-size: 1.5em;
   padding-left: 50px;
   line-height: 50px;
 }
@@ -99,7 +122,7 @@ body {
 }
 
 .navItem a:hover {
-  background-image: url("data:image/svg+xml,%3Csvg  xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='white' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  animation: cool 1s linear infinite;
   background-position: 0 100%;
   background-size: auto 4px;
   background-repeat: repeat-x;
@@ -115,7 +138,7 @@ body {
   width: 720px;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
@@ -123,7 +146,7 @@ body {
 .HeroImage span {
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 900;
-  font-size: 130px;
+  font-size: 10em;
   color: white;
 }
 
@@ -151,7 +174,6 @@ body {
 }
 
 .LineupContainer {
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -164,7 +186,7 @@ body {
 }
 
 .HeadLine {
-  font-size: 65px;
+  font-size: 4em;
   line-height: 100px;
   margin-right: 30px;
 }
@@ -178,7 +200,7 @@ body {
 }
 
 .MajorAct {
-  font-size: 50px;
+  font-size: 3em;
   line-height: 75px;
   margin-right: 30px;
 }
@@ -192,7 +214,7 @@ body {
 }
 
 .SupportAct {
-  font-size: 23px;
+  font-size: 1.4em;
   line-height: 50px;
   margin-right: 10px;
 }
@@ -218,14 +240,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.TicketCol{
+
+.TicketCol {
   width: 440px;
   padding: 25px;
   margin: 50px;
 }
 
-.TicketCol img{
-
+.TicketCol img {
+  width: 100%;
 }
 
 .Button {
@@ -233,11 +256,11 @@ body {
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 35px;
+  font-size: 2em;
   color: white;
   text-align: center;
   padding: 25px;
-  margin: 50px;
+
 }
 
 .Normie:hover {
@@ -273,9 +296,240 @@ body {
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 1em;
   line-height: 50px;
   text-align: right;
   position: absolute;
   bottom: 0;
 }
+
+/*****************  MEDIA QUERIES *******************/
+
+@media screen and (min-width: 1025px) {
+  .HamburgerIcon {
+    display: none;
+  }
+  .navMobSocial {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .TicketRow {
+    width: 880px;
+  }
+
+  .TicketCol {
+    width: 300px;
+    padding: 25px;
+    margin: 50px;
+  }
+  .Button {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 25px;
+
+  }
+  .SocialMediaSidebar {
+    display: none;
+  }
+
+  .navItem {
+    display: none;
+  }
+
+  .HeroImage {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .HeroImage span {
+    font-family: nimbus-sans-extended, sans-serif;
+    font-weight: 900;
+    font-size: 8em;
+    color: white;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .TicketRow {
+    display: block;
+  }
+
+  .TicketCol {
+    width: 40%;
+    padding: 0px;
+    margin-left: 30%;
+
+  }
+  .Button {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: 0px;
+}
+
+  .SocialMediaSidebar {
+    display: none;
+  }
+
+  .navItem {
+    display: none;
+  }
+
+  .HeroImage {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .HeroImage span {
+    font-family: nimbus-sans-extended, sans-serif;
+    font-weight: 900;
+    font-size: 6.5em;
+    color: white;
+  }
+  .LineupRow {
+    display: block;
+    padding: 5px;
+  }
+  .HeadLine {
+    font-size: 3em;
+    line-height: 1.4em;
+    margin-right: 10px;
+  }
+  .MajorAct {
+    font-size: 2.3em;
+    line-height: 1.2em;
+    margin-right: 10px;
+  }
+  .SupportAct {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin-right: 8px;
+  }
+
+
+}
+
+  @media screen and (max-width: 414px) {
+    .TicketRow {
+      display: block;
+    }
+    .navMobSocial {
+      display: none;
+    }
+
+    .TicketCol {
+      width: 27%;
+      padding: 0px;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      margin-left: 36.5%;
+
+    }
+    .Button {
+      font-size: 1em;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin: 0px;
+  }
+    .HeroImage {
+      width: 370px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .HeroImage span {
+      font-family: nimbus-sans-extended, sans-serif;
+      font-weight: 900;
+      font-size: 4em;
+      color: white;
+    }
+    .LineupRow {
+      display: block;
+    }
+
+    .HeadLine {
+      font-size: 3em;
+      line-height: 1.4em;
+      margin-right: 0px;
+    }
+    .MajorAct {
+      font-size: 2em;
+      line-height: 1.2em;
+      margin-right: 0px;
+    }
+    .SupportAct {
+      font-size: 1em;
+      line-height: 1.2em;
+      margin-right: 0px;
+    }
+
+  }
+
+
+
+    /* ****** Preparing for mobile menus ********** */
+    /* 1. Turn on and off for mobile - Use display none in CSS */
+    /* 2. Include and turn on/off a hamburger icon */
+    /* 3. Stack the buttons on top of each other using flex rules */
+    /* 4. Trim off the buttons in a column so I only see one row */
+    /* ***** Using jQuery ******* */
+    /* 1. Include the library in the head just like a font from a CDN location */
+    /* 2. Make a Javascript file  */
+    /* 3. Connect the file */
+    /* 4. Write the code */
+    /* Turns off menu at desktop size */
+    .alt-menu {
+      width: 100%;
+      height: 100%;
+      background-color: pink;
+      position: fixed;
+      left: -100%;
+      top: 0;
+      transition: 0.8s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
+
+    .alt-buttons{
+      font-size: 48px;
+      color: white;
+      font-weight: 100;
+      margin-top: 50px;
+
+    }
+
+    .alt-hamburger {
+      width: 60px;
+      height: 60px;
+      border: white 1px solid;
+      color: white;
+      font-weight: 200;
+      position: fixed;
+      right: 0;
+      top: 0;
+      font-size: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
