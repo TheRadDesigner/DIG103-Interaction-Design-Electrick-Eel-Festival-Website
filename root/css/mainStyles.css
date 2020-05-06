@@ -136,6 +136,7 @@ body {
 .MobNavSocial {
   color: white;
   font-size: 1.5em;
+  padding: 10px;
 }
 .MobNav {
   width: 100%;
@@ -163,6 +164,7 @@ body {
   color: white;
   text-decoration: none;
   text-align: center;
+  padding: 10px
 
 
 }
@@ -355,77 +357,16 @@ body {
   }
 }
 
-/**** Large Tablet (iPad Pro/Surface) ****/
-
-/* @media screen and (max-width: 1024px) {
-
-  .MobNavItem a{
-    font-family: nimbus-sans-extended, sans-serif;
-    font-weight: 900;
-    font-size: 48px;
-    color: white;
-    margin-top: 50px;
-
-  .TicketRow {
-    width: 880px;
-  }
-
-  .TicketCol {
-    width: 300px;
-    padding: 25px;
-    margin: 50px;
-  }
-  .Button {
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    padding: 25px;
-
-  }
-  .SocialMediaSidebar {
-    display: none;
-  }
-
-  .navItem {
-    display: none;
-  }
-
-  .HeroImage {
-    width: 800px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .HeroImage span {
-    font-family: nimbus-sans-extended, sans-serif;
-    font-weight: 900;
-    font-size: 8em;
-    color: white;
-  }
-} */
 /**** Tablet ****/
 
 @media screen and (max-width: 768px) {
-  .TicketRow {
-    display: block;
-  }
 
-  .TicketCol {
-    width: 40%;
-    padding: 0px;
-    margin-left: 30%;
+  /* Nav */
 
+  .MobNavItem a{
+    font-size: 3em;
+    padding: 20px 0px;
   }
-  .Button {
-    font-size: 1em;
-    color: white;
-    text-align: center;
-    padding: 25px;
-    margin: 0px;
-}
 
   .SocialMediaSidebar {
     display: none;
@@ -435,6 +376,11 @@ body {
     display: none;
   }
 
+  .MobNavRow{
+    display: none;
+  }
+
+  /* Landing Page */
   .HeroImage {
     width: 600px;
     position: absolute;
@@ -450,121 +396,68 @@ body {
     font-size: 6.5em;
     color: white;
   }
+
+  /* Lineup */
+
   .LineupRow {
     display: block;
-    padding: 5px;
   }
+
   .HeadLine {
-    font-size: 3em;
+    font-size: 4em;
     line-height: 1.4em;
     margin-right: 10px;
   }
+
   .MajorAct {
-    font-size: 2.3em;
-    line-height: 1.2em;
+    font-size: 3em;
+    line-height: 1.5em;
     margin-right: 10px;
   }
+
   .SupportAct {
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.5em;
     margin-right: 8px;
   }
-  .MobNavRow{
-    display: none;
+
+  /* Tickets */
+
+      .TicketRow {
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+
+  .TicketCol {
+    width: 40%;
+    padding: 0px;
+    margin-left: 30%;
+
   }
+  .Button {
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin: 0px;
+}
 
 }
-/**** Large Phone****/
-  @media screen and (max-width: 414px) {
-    .TicketRow {
-      display: block;
-    }
-    .navMobSocial {
-      display: none;
-    }
-
-    .TicketCol {
-      width: 27%;
-      padding: 0px;
-      margin-top: 0px;
-      margin-bottom: 10px;
-      margin-left: 36.5%;
-
-    }
-    .Button {
-      font-size: 1em;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin: 0px;
-  }
-    .HeroImage {
-      width: 370px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    .HeroImage span {
-      font-family: nimbus-sans-extended, sans-serif;
-      font-weight: 900;
-      font-size: 4em;
-      color: white;
-    }
-    .LineupRow {
-      display: block;
-    }
-
-    .HeadLine {
-      font-size: 3em;
-      line-height: 1.4em;
-      margin-right: 0px;
-    }
-    .MajorAct {
-      font-size: 2em;
-      line-height: 1.2em;
-      margin-right: 0px;
-    }
-    .SupportAct {
-      font-size: 1em;
-      line-height: 1.2em;
-      margin-right: 0px;
-    }
-
-    .MobNavRow{
-      display: flex;
-    }
-
-  }
 
   /**** Large Phone (iPhone pro 11+/Pixel XL/Galaxy S10+)****/
     @media screen and (max-width: 414px) {
-      .TicketRow {
-        display: block;
-      }
-      .navMobSocial {
-        display: none;
+      /* Nav */
+
+
+      .MobNavItem a{
+        font-size: 1.5em;
+        padding: 20px 0px;
       }
 
-      .TicketCol {
-        width: 27%;
-        padding: 0px;
-        margin-top: 0px;
-        margin-bottom: 10px;
-        margin-left: 36.5%;
-
-      }
-      .Button {
-        font-size: 1em;
-        color: white;
-        text-align: center;
-        padding: 25px;
-        margin: 0px;
-    }
+      /* Landing Page */
       .HeroImage {
-        width: 370px;
+        width: 350px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -578,31 +471,52 @@ body {
         font-size: 4em;
         color: white;
       }
-      .LineupRow {
-        display: block;
-      }
+
+      /* Lineup */
 
       .HeadLine {
         font-size: 3em;
         line-height: 1.4em;
-        margin-right: 0px;
       }
       .MajorAct {
         font-size: 2em;
         line-height: 1.2em;
-        margin-right: 0px;
       }
       .SupportAct {
-        font-size: 1em;
+        font-size: .8em;
         line-height: 1.2em;
-        margin-right: 0px;
       }
 
-      .MobNavRow{
-        display: flex;
+  /* Tickets */
+  .TicketRow {
+    display: block;
+  }
+      .TicketRow {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
       }
 
-    }
+      .TicketCol {
+        width: 250px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+
+      }
+
+      .Button {
+        font-size: 1em;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin: 0px;
+}
+        .Footer {
+          font-size: .75em;
+        }
+}
 
     /**** Small Phone(iPhone SE)****/
       @media screen and (max-width: 320px) {
@@ -615,10 +529,6 @@ body {
         .MobNavItem a{
           font-size: 1.1em;
           padding: 20px 0px;
-        }
-
-        .MobNavSocial {
-          padding: 10px;
         }
 
         /* Landing Page */
