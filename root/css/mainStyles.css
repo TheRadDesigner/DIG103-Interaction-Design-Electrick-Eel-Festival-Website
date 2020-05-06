@@ -421,6 +421,13 @@ body {
     margin-right: 8px;
   }
 
+.ArtistInfo {
+  background-color: green;
+
+}
+.ArtistInfoRow {
+  display: flex;
+}
   /* Tickets */
 
       .TicketRow {
@@ -448,7 +455,9 @@ body {
   /**** Large Phone (iPhone pro 11+/Pixel XL/Galaxy S10+)****/
     @media screen and (max-width: 414px) {
       /* Nav */
-
+      .navLogo {
+        font-size: 1.25em;
+      }
 
       .MobNavItem a{
         font-size: 1.5em;
@@ -495,7 +504,7 @@ body {
         display: block;
         justify-content: center;
         align-items: center;
-        margin-left: 40px;
+        margin-left: 30%;
       }
 
       .TicketCol {
@@ -516,74 +525,4 @@ body {
         .Footer {
           font-size: .75em;
         }
-}
-
-    /**** Small Phone(iPhone SE)****/
-      @media screen and (max-width: 320px) {
-
-        /* Nav */
-        .navLogo {
-          font-size: 1.25em;
-        }
-
-        .MobNavItem a{
-          font-size: 1.1em;
-          padding: 20px 0px;
-        }
-
-        /* Landing Page */
-        .HeroImage {
-          width: 300px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-        }
-
-        .HeroImage span {
-          font-family: nimbus-sans-extended, sans-serif;
-          font-weight: 900;
-          font-size: 3.30em;
-          color: white;
-        }
-
-        /* Lineup */
-
-        .HeadLine {
-          font-size: 2em;
-          line-height: 1.4em;
-        }
-        .MajorAct {
-          font-size: 1.2em;
-          line-height: 1.2em;
-        }
-        .SupportAct {
-          font-size: .8em;
-          line-height: 1.2em;
-        }
-
-        .TicketRow {
-          display: block;
-          justify-content: center;
-          align-items: center;
-          margin-left: 60px;
-        }
-
-        /* Tickets */
-        .TicketCol {
-          width: 200px;
-          padding: 0px;
-          margin-top: 0px;
-          margin-bottom: 10px;
-          left:160px;
-
-        }
-
-        .Button {
-          font-size: .75em;
-          color: white;
-          text-align: center;
-          padding: 10px;
-          margin: 0px;
 }
