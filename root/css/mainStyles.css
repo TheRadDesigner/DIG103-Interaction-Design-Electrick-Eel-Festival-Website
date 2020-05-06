@@ -60,7 +60,9 @@ body {
   }
 }
 
-/* Navigation Menu */
+/**** Navigation ****/
+
+/* Desktop */
 .nav {
   position: fixed;
   top: 0;
@@ -71,6 +73,30 @@ body {
   width: 100%;
   z-index: 1;
 }
+
+.navLogo {
+  color: white;
+  flex-grow: 6;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5em;
+  padding-left: 50px;
+  line-height: 50px;
+}
+
+.navItem {
+  flex-grow: 1;
+}
+
+.navItem a:hover {
+  animation: cool 1s linear infinite;
+  background-position: 0 100%;
+  background-size: auto 4px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+/* Mobile */
 
 .nav a {
   color: white;
@@ -107,29 +133,41 @@ body {
   flex-grow: 1;
 }
 
-.navLogo {
+.MobNavSocial {
   color: white;
-  flex-grow: 6;
-  font-style: normal;
-  font-weight: 900;
   font-size: 1.5em;
-  padding-left: 50px;
-  line-height: 50px;
+}
+.MobNav {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 0, 255, 0.76);
+  position: fixed;
+  left: -100%;
+  top: 0;
+  transition: 0.8s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+
 }
 
-.navItem {
-  flex-grow: 1;
+.MobNav-Open{
+  left: 0%;
+  z-index: 1;
 }
 
-.navItem a:hover {
-  animation: cool 1s linear infinite;
-  background-position: 0 100%;
-  background-size: auto 4px;
-  background-repeat: repeat-x;
+.MobNavItem a{
+  font-family: nimbus-sans-extended, sans-serif;
+  font-weight: 900;
+  color: white;
   text-decoration: none;
+  text-align: center;
+
+
 }
 
-/* Landing Page */
+/**** Landing Page ****/
 .LandingPage {
   position: relative;
 }
@@ -141,6 +179,7 @@ body {
   left: 45%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 0;
 }
 
 .HeroImage span {
@@ -164,7 +203,7 @@ body {
   }
 }
 
-/* Lineup screen */
+/**** Lineup screen ****/
 .Lineup {
   font-family: nimbus-sans-extended, sans-serif;
   font-weight: 900;
@@ -305,6 +344,8 @@ body {
 
 /*****************  MEDIA QUERIES *******************/
 
+/**** Desktop ****/
+
 @media screen and (min-width: 1025px) {
   .HamburgerIcon {
     display: none;
@@ -314,7 +355,16 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+/**** Large Tablet (iPad Pro/Surface) ****/
+
+/* @media screen and (max-width: 1024px) {
+
+  .MobNavItem a{
+    font-family: nimbus-sans-extended, sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: white;
+    margin-top: 50px;
 
   .TicketRow {
     width: 880px;
@@ -355,8 +405,8 @@ body {
     font-size: 8em;
     color: white;
   }
-}
-
+} */
+/**** Tablet ****/
 
 @media screen and (max-width: 768px) {
   .TicketRow {
@@ -419,10 +469,12 @@ body {
     line-height: 1.5em;
     margin-right: 8px;
   }
-
+  .MobNavRow{
+    display: none;
+  }
 
 }
-
+/**** Large Phone****/
   @media screen and (max-width: 414px) {
     .TicketRow {
       display: block;
@@ -481,55 +533,147 @@ body {
       margin-right: 0px;
     }
 
+    .MobNavRow{
+      display: flex;
+    }
+
   }
 
+  /**** Large Phone (iPhone pro 11+/Pixel XL/Galaxy S10+)****/
+    @media screen and (max-width: 414px) {
+      .TicketRow {
+        display: block;
+      }
+      .navMobSocial {
+        display: none;
+      }
 
+      .TicketCol {
+        width: 27%;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 36.5%;
 
-    /* ****** Preparing for mobile menus ********** */
-    /* 1. Turn on and off for mobile - Use display none in CSS */
-    /* 2. Include and turn on/off a hamburger icon */
-    /* 3. Stack the buttons on top of each other using flex rules */
-    /* 4. Trim off the buttons in a column so I only see one row */
-    /* ***** Using jQuery ******* */
-    /* 1. Include the library in the head just like a font from a CDN location */
-    /* 2. Make a Javascript file  */
-    /* 3. Connect the file */
-    /* 4. Write the code */
-    /* Turns off menu at desktop size */
-    .alt-menu {
-      width: 100%;
-      height: 100%;
-      background-color: pink;
-      position: fixed;
-      left: -100%;
-      top: 0;
-      transition: 0.8s;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column;
+      }
+      .Button {
+        font-size: 1em;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin: 0px;
+    }
+      .HeroImage {
+        width: 370px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .HeroImage span {
+        font-family: nimbus-sans-extended, sans-serif;
+        font-weight: 900;
+        font-size: 4em;
+        color: white;
+      }
+      .LineupRow {
+        display: block;
+      }
+
+      .HeadLine {
+        font-size: 3em;
+        line-height: 1.4em;
+        margin-right: 0px;
+      }
+      .MajorAct {
+        font-size: 2em;
+        line-height: 1.2em;
+        margin-right: 0px;
+      }
+      .SupportAct {
+        font-size: 1em;
+        line-height: 1.2em;
+        margin-right: 0px;
+      }
+
+      .MobNavRow{
+        display: flex;
+      }
+
     }
 
-    .alt-buttons{
-      font-size: 48px;
-      color: white;
-      font-weight: 100;
-      margin-top: 50px;
+    /**** Small Phone(iPhone SE)****/
+      @media screen and (max-width: 320px) {
 
-    }
+        /* Nav */
+        .navLogo {
+          font-size: 1.25em;
+        }
 
-    .alt-hamburger {
-      width: 60px;
-      height: 60px;
-      border: white 1px solid;
-      color: white;
-      font-weight: 200;
-      position: fixed;
-      right: 0;
-      top: 0;
-      font-size: 34px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+        .MobNavItem a{
+          font-size: 1.1em;
+          padding: 20px 0px;
+        }
 
-    }
+        .MobNavSocial {
+          padding: 10px;
+        }
+
+        /* Landing Page */
+        .HeroImage {
+          width: 300px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+
+        .HeroImage span {
+          font-family: nimbus-sans-extended, sans-serif;
+          font-weight: 900;
+          font-size: 3.30em;
+          color: white;
+        }
+
+        /* Lineup */
+
+        .HeadLine {
+          font-size: 2em;
+          line-height: 1.4em;
+        }
+        .MajorAct {
+          font-size: 1.2em;
+          line-height: 1.2em;
+        }
+        .SupportAct {
+          font-size: .8em;
+          line-height: 1.2em;
+        }
+
+        .TicketRow {
+          display: block;
+          justify-content: center;
+          align-items: center;
+          margin-left: 60px;
+        }
+
+        /* Tickets */
+        .TicketCol {
+          width: 200px;
+          padding: 0px;
+          margin-top: 0px;
+          margin-bottom: 10px;
+          left:160px;
+
+        }
+
+        .Button {
+          font-size: .75em;
+          color: white;
+          text-align: center;
+          padding: 10px;
+          margin: 0px;
+}
